@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Analysis Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" style="color:white" href="#">Latitude</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Max Temperature</a>
+                  <a class="dropdown-item" href="#">Humidty</a>
+                  <a class="dropdown-item" href="#">Cloudiness</a>
+                  <a class="dropdown-item" href="#">Wind Speed</a>                  
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data</a>
+              </li>
+            </ul>
+          </div>
+      </nav> 
+
+      <!--Body-->
+      <div class="container">
+            <!-- columns have 12 areas of width to work with-->
+            <div class="row">
+                <!--Left Box-->
+                <div class="col-lg-7">
+                    <div class = box>
+                        <h1><b>Max Temperature</b></h1>
+                        <hr>
+                        <div class = visualization-pages>
+                        <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Scatter Plot" class="indexpagesummaryimage">
+                        </div>
+                        <p style="color:gray">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
+                            More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time 
+                            of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year
+                            this data was gathered.</p>
+                    </div> 
+                </div>
+                <!-- right box-->
+                <div class="col-lg-5">
+                    <div class = box>
+                        <h2>Visualizations</h2>
+                        <hr>
+                        <div class="row">
+                        <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Scatter Plot" class="indexpagevisualizations">
+                        <img src="Resources/assets/images/Fig2.png" alt="Humidty Scatter Plot" class="indexpagevisualizations">
+                        </div>
+                        <div class="row">
+                        <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Scatter Plot" class="indexpagevisualizations">
+                        <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Scatter Plot" class="indexpagevisualizations">
+                        </div>
+                    </div>
+                </div>
+    <div class = "footer fixed-bottom">
+        <p>Weather Visualization Page</p>
+    </div>
+  <!-- Add to make dropdown work-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+</html>
