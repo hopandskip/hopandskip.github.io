@@ -1,2 +1,2 @@
 # hopandskip.github.io
-Website for climate data
+Web visualization of analysis performed on weather data.
