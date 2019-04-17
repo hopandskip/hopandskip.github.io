@@ -11,61 +11,70 @@
 <body>
     <!-- Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" style="color:white" href="#">Latitude</a>
+        <a class="navbar-brand" style="color:white" href="index.html">Latitude</a>
+        <button class="navbar-toggler border border-white color-gray" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" 
+                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Max Temperature</a>
-                  <a class="dropdown-item" href="#">Humidty</a>
-                  <a class="dropdown-item" href="#">Cloudiness</a>
-                  <a class="dropdown-item" href="#">Wind Speed</a>                  
+                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>                  
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Comparison</a>
+                <a class="nav-link" href="comparison.html">Comparison</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
+                <a class="nav-link" href="weatherdata.html">Data</a>
               </li>
             </ul>
           </div>
-      </nav> 
-
+      </nav>
       <!--Body-->
       <div class="container">
-            <!-- columns have 12 areas of width to work with-->
             <div class="row">
-                <!--Left Box-->
-                <div class="col-lg-8">
+                <!--Summary Box-->
+                <div class="col-lg-7">
                     <div class = box>
                         <h1><b>Summary: Latitude vs X</b></h1>
                         <hr>
                         <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Scatter Plot" class="indexpagesummaryimage float-left">
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                        <p>The purpose of this project was to analyze how weather elements change as you get closer to the equator. To
+                                accomplish this analysis, data from the OpenWeatherMap API was used to assemble a dataset on over
                                 500 cities.</p>
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-                                source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-                                any trends and correlations witnessed.</p>
+                        <p>After assembling the dataset, Matplotlib was used to plot various weather elements against the latitude.
+                                Weather factors that were looked at include: temperature, cloudiness, wind speed, and humidity. This site provides the
+                                source data and visualizations that were created as part of the analysis, as well as explanations and descriptions of
+                                any trends and correlations observed.</p>
                     </div> 
                 </div>
-                <!-- right box-->
-                <div class="col-lg-4">
-                    <div class = box>
-                        <h2>Visualizations</h2>
+                <!-- Visulization links box-->
+                <div class="col-lg-5">
+                    <div class = "box">
+                        <h2><b>Visualizations</b></h2>
                         <hr>
                         <div class="row">
-                        <img src="Resources/assets/images/Fig1.png" alt="Max Temperature Scatter Plot" class="indexpagevisualizations">
-                        <img src="Resources/assets/images/Fig2.png" alt="Humidty Scatter Plot" class="indexpagevisualizations">
-                        </div>
-                        <div class="row">
-                        <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Scatter Plot" class="indexpagevisualizations">
-                        <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Scatter Plot" class="indexpagevisualizations">
+                          <div class="column">
+                            <a href = "maxtemp.html"><img src="Resources/assets/images/Fig1.png" 
+                              title="Max Temperature Scatter Plot"></a>
+                            <a href = "cloudiness.html"><img src="Resources/assets/images/Fig3.png" 
+                              title="Cloudiness Scatter Plot"></a>
+                          </div>
+                          <div class="column">
+                            <a href = "humidity.html"><img src="Resources/assets/images/Fig2.png" 
+                              title="Humidty Scatter Plot"></a>
+                            <a href = "windspeed.html"><img src="Resources/assets/images/Fig4.png" 
+                              title="Wind Speed Scatter Plot"></a>
+                          </div>
                         </div>
                     </div>
                 </div>

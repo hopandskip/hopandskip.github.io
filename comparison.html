@@ -41,44 +41,40 @@
 
       <!--Body-->
       <div class="container">
-            <!-- columns have 12 areas of width to work with-->
             <div class="row">
-                <!--Left Box-->
-                <div class="col-lg-7">
-                    <div class = box>
-                        <h1><b>Max Temperature</b></h1>
-                        <hr>
-                        <div class = visualization-pages>
-                        <img src="Resources/assets/images/Fig1.png" title="Max Temperature Scatter Plot" class="indexpagesummaryimage">
-                        </div>
-                        <p style="color:gray">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). 
-                            Due to the tilt of the earth this time of the year, the southern hemisphere is warmer than the northern hemisphere. The
-                            temperatures in the southern hemisphere are similar to the equator while the temperatures in the nothern hemisphere are siginficantly 
-                            colder. </p>
-                    </div> 
-                </div>
-                <!-- Visulization links box-->
-                <div class="col-lg-5">
+                <!--Summary Box-->
+                <div class="col-sm-12">
                     <div class = "box">
-                        <h2><b>Visualizations</b></h2>
+                        <h1>Comparison: Latitude vs X</h1>
                         <hr>
-                        <div class="row">
-                          <div class="column">
+                        <p style="font-family: 'Times New Roman', Times, serif;"">Click any plot to get an in-depth analysis</p>
+                        <div class="row" style="padding-bottom:20px;" >
+                          <div class="col-sm-6">
+                            <br>
+                            <h3 class="comparison">vs. Max Temperature</h3>
                             <a href = "maxtemp.html"><img src="Resources/assets/images/Fig1.png" 
                               title="Max Temperature Scatter Plot"></a>
+                            <br><br>
+                            <h3 class="comparison">vs. Cloudiness</h3>
                             <a href = "cloudiness.html"><img src="Resources/assets/images/Fig3.png" 
-                              title="Cloudiness Scatter Plot"></a>
+                              title="Cloudiness Scatter Plot"></a>   
                           </div>
-                          <div class="column">
+                          <div class="col-sm-6">
+                            <br>
+                            <h3 class="comparison">vs. Humidity</h3>
                             <a href = "humidity.html"><img src="Resources/assets/images/Fig2.png" 
                               title="Humidty Scatter Plot"></a>
+                            <br><br>
+                            <h3 class="comparison">vs. Wind Speed</h3>
                             <a href = "windspeed.html"><img src="Resources/assets/images/Fig4.png" 
                               title="Wind Speed Scatter Plot"></a>
                           </div>
                         </div>
                     </div>
                 </div>
-    <div class = "footer fixed-bottom">
+            </div>
+        </div>
+    <div class = "footer">
         <p>Weather Visualization Page</p>
     </div>
   <!-- Add to make dropdown work-->
