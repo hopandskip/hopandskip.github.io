@@ -88,8 +88,12 @@ img{
     height:50%; 
 }
 
+.row {
+    position:relative;
+}
+
 /* Navagation Bar if page is small*/
-@media screen and (max-width: 480px){
+@media (max-width: 1000px) {
 .navbar-expand-lg {
     background-color: lightseagreen;
     padding: 0px;
@@ -97,7 +101,7 @@ img{
 }
 
 .navbar div{
-    background-color:white;
+    background-color: white;
 }
 
 button{
